@@ -1,8 +1,16 @@
 class Notificacion:
-    def __init__(self, mensaje, estudiante):
+    def __init__(self, idNotificacion: int, mensaje: str, fechaEnvio, usuario):
+        self.idNotificacion = idNotificacion
         self.mensaje = mensaje
-        self.estudiante = estudiante
+        self.fechaEnvio = fechaEnvio
         self.leida = False
+        self.usuario = usuario
 
-    def marcar_como_leida(self):
+    def enviar(self):
+        pass
+
+    def marcarComoLeida(self):
         self.leida = True
+
+    def mostrar(self):
+        pass
